@@ -2,6 +2,12 @@ import requests
 from bs4 import BeautifulSoup
 import time
 
+"""
+hobbyfactory
+=======================
+리테일 업체 하비팩토리의 재고 알림을 받을 수 있는 모듈입니다.
+"""
+
 # url = "http://www.hobbyfactory.kr/shop/shopdetail.html?branduid=2180109"
 url = "PLACE_YOUR_URL_HERE"
 slack_webhook_url = "YOUR_OWN_SLACK_WEBHOOK_URL"
