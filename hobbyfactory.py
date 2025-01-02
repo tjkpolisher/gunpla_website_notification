@@ -10,7 +10,12 @@ hobbyfactory
 
 # url = "http://www.hobbyfactory.kr/shop/shopdetail.html?branduid=2180109"
 url = "PLACE_YOUR_URL_HERE"
-slack_webhook_url = "YOUR_OWN_SLACK_WEBHOOK_URL"
+# slack_webhook_url = "YOUR_OWN_SLACK_WEBHOOK_URL"
+
+# 보안 문제로 슬랙 웹훅 url을 별도의 txt 파일로 저장한 경우
+# 아래 구문을 주석 해제한 뒤 파일 이름을 변경하시고 사용하시면 됩니다.
+with open("webhook_url.txt", "r") as f:
+    slack_webhook_url = f.read()
 
 
 def check_stock():
