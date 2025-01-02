@@ -6,13 +6,14 @@
 현재 리테일 샵 별로 알림 기능을 순차적으로 구현 중이며, 하나의 메인 모듈에서 각 기능을 불러오는 기능도 단계적으로 구현할 예정입니다.
 
 ## Virtual Environment
-가상환경을 별도로 설치하실 때는 `requirements.txt`를 이용해 가상환경을 설치해주세요.  
+가상환경을 별도로 설치하실 때 아래와 같이 가상환경을 생성한 후 `requirements.txt`를 이용해 패키지를 설치해주세요.  
 ```Bash
+python -m venv {venv_name}
 pip install requirements.txt
 ```  
 스크립트 실행 전, 가상환경을 먼저 활성화시켜주세요.  
 ```Bash
-source website/Scripts/activate
+source {venv_name}/Scripts/activate
 ```  
 ## Slack Configuration
 이 애플리케이션은 슬랙(Slack)의 게시판에 알림을 적용하는 방식으로 개발되었습니다.  
